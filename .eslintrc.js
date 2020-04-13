@@ -23,6 +23,7 @@ module.exports = {
   plugins: [
     'react',
     'prettier',
+    'react-hooks',
   ],
   rules: {
     'prettier/prettier': 'error',
@@ -41,5 +42,8 @@ module.exports = {
       exceptions: [],
     }],
     'no-param-reassign': 'off',
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
+    "react/require-default-props": ['off', { forbidDefaultForRequired: false, ignoreFunctionalComponents: false }]
   },
 };
